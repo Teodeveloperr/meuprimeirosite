@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAG TABLE</title>
+    <style>
+        table {
+            -webkit-box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.54); 
+            box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.54);
+            border: solid 5px;
+            border-radius: 5px;
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        table tfoot td {
+            background-color: gray;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+
+        }
+        table tbody tr:hover td {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" cellspacing="0" cellpadding="15">
+        <caption>Tabela dos irmãos e minha esposa</caption>
+        <thead>
+            <tr> <!--TR cria linhas da tabela-->
+                <th colspan="2">Minha Tabela</th> <!-- TH define como cabeçalho-->
+            </tr>
+            <tr> <!--TR cria linhas da tabela-->
+                <th title="Nome Completo">Nome</th> <!-- TH define como cabeçalho-->
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Raphael</td> <!-- TD cria celulas da tabela-->
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>Monyque</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Laila</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
